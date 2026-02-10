@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SIGNA - Sistema Integral de Gestión, Navegación y Asistencia. Plataforma web moderna e inclusiva con juegos interactivos y chatbot inteligente.">
+    <meta name="theme-color" content="#667eea">
+    <title>SIGNA - Sistema Integral de Gestión, Navegación y Asistencia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR STICKY MODERNO -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" width="32" height="32">
+                    <path d="M20 2C10.06 2 2 10.06 2 20s8.06 18 18 18 18-8.06 18-18S29.94 2 20 2m0 3c8.27 0 15 6.73 15 15s-6.73 15-15 15S5 28.27 5 20 11.73 5 20 5m3.5 6c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5m-7 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5m3.5 11c2.49 0 4.71 1.28 6 3.2.73-.43 1.56-.7 2.45-.7 2.76 0 5 2.24 5 5 0 2.51-1.86 4.59-4.3 4.95A8.003 8.003 0 0120 27c-2.24 0-4.25-.93-5.7-2.45C12.86 24.59 11 22.51 11 20c0-2.76 2.24-5 5-5 .89 0 1.72.27 2.45.7 1.29-1.92 3.51-3.2 6-3.2z" fill="currentColor"/>
+                </svg>
+                <span>SIGNA</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#que-es" class="nav-link">¿Qué es?</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#juegos" class="nav-link">Juegos</a></li>
+                <li><a href="#accesibilidad" class="nav-link">Accesibilidad</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="btn-dark-mode" id="darkModeBtn" aria-label="Alternar modo oscuro">
+                    <svg viewBox="0 0 24 24" width="20" height="20">
+                        <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION CON ANIMACIONES -->
+    <section id="inicio" class="hero">
+        <div class="hero-background">
+            <div class="animated-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up">
+                Bienvenido a <span class="gradient-text">SIGNA</span>
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Sistema Integral de Gestión, Navegación y Asistencia
+            </p>
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                Una plataforma moderna e inclusiva diseñada para potenciar tu experiencia digital con herramientas inteligentes, juegos educativos y accesibilidad avanzada.
+            </p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                <button class="btn btn-primary" onclick="document.getElementById('que-es').scrollIntoView({behavior: 'smooth'})">
+                    Explorar Plataforma
+                </button>
+                <button class="btn btn-secondary" onclick="document.getElementById('juegos').scrollIntoView({behavior: 'smooth'})">
+                    Juega Ahora
+                </button>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Desplázate para explorar</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ¿QUÉ ES SIGNA? -->
+    <section id="que-es" class="section about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">¿Qué es SIGNA?</h2>
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Gestión Integral</h3>
+                    <p>Sistema completo que unifica navegación, asistencia y herramientas educativas en una sola plataforma.</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Inclusión Real</h3>
+                    <p>Accesibilidad avanzada con modo oscuro, ajuste de texto, alto contraste y navegación por teclado.</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40">
+                            <path d="M15 5.1L9.53 16h3.98L13 21h3L11 5.1zM9 16.5H4v-2h5v2zm10-6h5V8.5h-5v2z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Juegos Educativos</h3>
+                    <p>Experiencias interactivas que combinan aprendizaje con entretenimiento para usuarios de todas las edades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-header">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M20 13H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zM7 19c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zM20 3H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM7 9c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Chatbot Inteligente</h3>
+                    <p>Asistente flotante disponible 24/7 con respuestas contextuales, guía de navegación y soporte en juegos.</p>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-header">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Juegos Interactivos</h3>
+                    <p>5 juegos diferentes: memoria, lógica, atención visual, reflejos y un juego educativo inclusivo.</p>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-header">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Accesibilidad Avanzada</h3>
+                    <p>Panel flotante con ajustes de tipografía, contraste, tema oscuro y lector de texto integrado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCESIBILIDAD SECTION -->
+    <section id="accesibilidad" class="section accessibility">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Inclusión y Accesibilidad</h2>
+            <div class="accessibility-content">
+                <div class="accessibility-info" data-aos="fade-right">
+                    <h3>Diseñado para Todos</h3>
+                    <p>SIGNA presenta un enfoque integral de accesibilidad que garantiza que todas las personas, independientemente de sus capacidades, puedan navegar, aprender y disfrutar de la plataforma sin limitaciones.</p>
+                    <ul class="accessibility-list">
+                        <li><strong>Ajuste de Tamaño de Texto:</strong> Aumenta o reduce el tamaño según tus necesidades</li>
+                        <li><strong>Modo Oscuro:</strong> Reduce la fatiga visual con tema oscuro profesional</li>
+                        <li><strong>Alto Contraste:</strong> Mejora la legibilidad para usuarios con baja visión</li>
+                        <li><strong>Navegación por Teclado:</strong> Acceso completo sin usar ratón</li>
+                        <li><strong>Lector de Texto:</strong> Síntesis de voz integrada para contenido</li>
+                        <li><strong>Indicadores de Foco:</strong> Visualización clara de elementos enfocados</li>
+                    </ul>
+                </div>
+                <div class="accessibility-visual" data-aos="fade-left">
+                    <div class="accessibility-mockup">
+                        <div class="mockup-panel">
+                            <h4>Panel de Accesibilidad</h4>
+                            <button class="control-btn">+ Aumentar Texto</button>
+                            <button class="control-btn">- Reducir Texto</button>
+                            <button class="control-btn">Modo Oscuro</button>
+                            <button class="control-btn">Alto Contraste</button>
+                            <button class="control-btn">Lector</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE JUEGOS -->
+    <section id="juegos" class="section games">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Juegos Interactivos</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Pon a prueba tus habilidades con estos juegos educativos e interactivos</p>
+            
+            <div class="games-grid">
+                <!-- JUEGO DE MEMORIA -->
+                <div class="game-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="game-header">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M17 3H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Juego de Memoria</h3>
+                    <p>Encuentra los pares coincidentes en el menor tiempo posible. Mejora tu memoria visual.</p>
+                    <button class="btn btn-game" onclick="startGame('memory')">Jugar Ahora</button>
+                </div>
+
+                <!-- JUEGO DE LÓGICA -->
+                <div class="game-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="game-header">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Juego de Lógica</h3>
+                    <p>Completa secuencias y resuelve problemas lógicos. Desafía tu razonamiento.</p>
+                    <button class="btn btn-game" onclick="startGame('logic')">Jugar Ahora</button>
+                </div>
+
+                <!-- JUEGO DE ATENCIÓN -->
+                <div class="game-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="game-header">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Atención Visual</h3>
+                    <p>Identifica diferencias y detalles ocultos. Entrena tu percepción visual.</p>
+                    <button class="btn btn-game" onclick="startGame('attention')">Jugar Ahora</button>
+                </div>
+
+                <!-- JUEGO DE REFLEJOS -->
+                <div class="game-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="game-header">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M13 5h-2v4H7v2h4v4h2v-4h4v-2h-4V5zm-1 15c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Reflejos Rápidos</h3>
+                    <p>Reacciona rápido ante los estímulos. Mediremos tu tiempo de respuesta.</p>
+                    <button class="btn btn-game" onclick="startGame('reflexes')">Jugar Ahora</button>
+                </div>
+
+                <!-- JUEGO EDUCATIVO -->
+                <div class="game-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="game-header">
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3-8.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-6 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Quiz Educativo</h3>
+                    <p>Aprende mientras juegas con preguntas interactivas. Perfecto para todas las edades.</p>
+                    <button class="btn btn-game" onclick="startGame('quiz')">Jugar Ahora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL DE JUEGOS -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeGame()" aria-label="Cerrar juego">×</button>
+            <div id="gameContainer" class="game-container"></div>
+        </div>
+    </div>
+
+    <!-- TECNOLOGÍAS -->
+    <section id="tecnologias" class="section technologies">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Tecnologías Utilizadas</h2>
+            <div class="tech-grid">
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
+                    <h4>HTML5</h4>
+                    <p>Estructura semántica moderna y accesible</p>
+                </div>
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="200">
+                    <h4>CSS3</h4>
+                    <p>Grid, Flexbox y animaciones avanzadas</p>
+                </div>
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="300">
+                    <h4>JavaScript</h4>
+                    <p>Lógica modulada y programación orientada a objetos</p>
+                </div>
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="400">
+                    <h4>Accesibilidad</h4>
+                    <p>WCAG 2.1 AA e inclusión de usuarios</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contacto</h2>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm" data-aos="fade-up">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+                <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Información de Contacto</h3>
+                    <p>¿Tienes preguntas? Nos encantaría saber de ti. Puedes contactarnos a través del formulario o utilizar el chatbot flotante para asistencia inmediata.</p>
+                    <ul class="contact-list">
+                        <li><strong>Disponibilidad:</strong> 24/7 a través del chatbot</li>
+                        <li><strong>Respuesta:</strong> Dentro de 24 horas</li>
+                        <li><strong>Soporte:</strong> Chat inteligente integrado</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver al inicio">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+            <path d="M7 14l5-5 5 5z" fill="currentColor"/>
+        </svg>
+    </button>
+
+    <!-- PANEL FLOTANTE DE ACCESIBILIDAD -->
+    <div class="accessibility-panel" id="accessibilityPanel">
+        <button class="panel-toggle" id="panelToggle" aria-label="Abrir panel de accesibilidad" aria-expanded="false">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path d="M20.5 6c-2.61 0-4.8-1.95-5.77-4.5-1.27 2.55-3.46 4.5-6.23 4.5s-4.96-1.95-6.23-4.5C3.3 4.05 1.11 6 0 8.5c1.11 2.5 3.3 4.5 6 4.5 2.77 0 4.96-1.95 6.23-4.5 1.27 2.55 3.46 4.5 6.23 4.5 2.7 0 4.89-2 6-4.5-1.11-2.5-3.3-4.5-6-4.5z" fill="currentColor"/>
+            </svg>
+        </button>
+        <div class="panel-content" id="panelContent">
+            <h3>Accesibilidad</h3>
+            <div class="controls-group">
+                <label>Tamaño de Texto</label>
+                <div class="button-group">
+                    <button class="control-btn" id="decreaseText" aria-label="Reducir tamaño de texto">A−</button>
+                    <button class="control-btn" id="resetText" aria-label="Restablecer tamaño de texto">Reset</button>
+                    <button class="control-btn" id="increaseText" aria-label="Aumentar tamaño de texto">A+</button>
+                </div>
+            </div>
+            <div class="controls-group">
+                <label>Tema</label>
+                <div class="button-group">
+                    <button class="control-btn" id="lightMode" aria-label="Modo claro">☀️ Claro</button>
+                    <button class="control-btn" id="darkModePanel" aria-label="Modo oscuro">🌙 Oscuro</button>
+                    <button class="control-btn" id="highContrast" aria-label="Alto contraste">⚡ Contraste</button>
+                </div>
+            </div>
+            <div class="controls-group">
+                <label>Audio</label>
+                <button class="control-btn" id="textToSpeech" aria-label="Lector de texto">🔊 Lector</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHATBOT FLOTANTE -->
+    <div id="chatbot" class="chatbot">
+        <button class="chatbot-toggle" id="chatbotToggle" aria-label="Abrir chatbot" aria-expanded="false">
+            <svg viewBox="0 0 24 24" width="28" height="28">
+                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12h-8v-2h8v2zm0-3h-8V9h8v2zm0-3H4V6h14v2z" fill="currentColor"/>
+            </svg>
+        </button>
+        <div class="chatbot-window" id="chatbotWindow" style="display: none;">
+            <div class="chatbot-header">
+                <h3>SIGNA Asistente</h3>
+                <button class="chatbot-close" id="chatbotClose" aria-label="Cerrar chatbot">×</button>
+            </div>
+            <div class="chatbot-messages" id="chatMessages"></div>
+            <div class="chatbot-input-area">
+                <input 
+                    type="text" 
+                    id="chatInput" 
+                    placeholder="Escribe tu pregunta..." 
+                    aria-label="Mensaje del chatbot"
+                >
+                <button id="chatSend" aria-label="Enviar mensaje">
+                    <svg viewBox="0 0 24 24" width="20" height="20">
+                        <path d="M16.6915026,12.4744748 L3.50612381,13.2599618 C3.19218622,13.2599618 3.03521743,13.4170592 3.03521743,13.5741566 L1.15159189,20.0151496 C0.8376543,20.8006365 0.99,21.89 1.77946707,22.52 C2.41,22.99 3.50612381,23.1 4.13399899,22.8429026 L21.714504,14.0454487 C22.6563168,13.5741566 23.1272231,12.6315722 22.9702544,11.6889879 L4.13399899,1.16526348 C3.34915502,0.9 2.40734225,1.00636533 1.77946707,1.4776575 C0.994623095,2.10604706 0.837654326,3.0486314 1.15159189,3.99491579 L3.03521743,10.4359088 C3.03521743,10.5930061 3.34915502,10.7501035 3.50612381,10.7501035 L16.6915026,11.5355905 C16.6915026,11.5355905 17.1624089,11.5355905 17.1624089,12.0068826 C17.1624089,12.4781748 16.6915026,12.4744748 16.6915026,12.4744748 Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SIGNA</h4>
+                    <p>Sistema Integral de Gestión, Navegación y Asistencia para una experiencia web moderna e inclusiva.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#que-es">¿Qué es?</a></li>
+                        <li><a href="#juegos">Juegos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#accesibilidad">Accesibilidad</a></li>
+                        <li><a href="#tecnologias">Tecnologías</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Términos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SIGNA - Todos los derechos reservados. Diseñado con dedicación para la inclusión digital.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
+    <script src="js/accessibility.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/games.js"></script>
+</body>
+</html>
